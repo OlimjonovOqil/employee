@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "types": ["testing-library__jest-dom"],
+    "baseUrl": ".",
+    "paths":{
+      "@/*":["src/*"],
+      "@/app/*":["src/app/*"],
+      "@/components/*":["src/components/*"],
+      "@/pages/*":["src/pages/*"],
+      "@/utils/*":["src/utils/*"],
+      "@/middleware/*":["src/middleware/*"],
+    }
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }],
+ 
+}
