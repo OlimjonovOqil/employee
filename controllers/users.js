@@ -104,7 +104,6 @@ const register = async (req, res) => {
 };
 
 /**
- *
  * @route GET /api/user/current
  * @desc Текущий пользователь
  * @access Private

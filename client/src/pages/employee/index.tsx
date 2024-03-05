@@ -22,7 +22,18 @@ export const Employee = () => {
   const userId = localStorage.getItem("id")
 
   if (isLoading) {
-    return <span>Loading...</span>
+    return (
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          height: "100vh",
+        }}
+      >
+        Loading...
+      </div>
+    )
   }
 
   if (!data) {

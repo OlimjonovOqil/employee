@@ -29,33 +29,6 @@ export const AddEmployee = () => {
   }, [user, navigate])
   return (
     <Layout>
-      {/* <Space
-        style={{
-          width: "50%",
-          display: `${status ? "flex" : "none"}`,
-          justifyContent: "end",
-          margin: " 0 auto 20px",
-        }}
-        direction="vertical"
-      >
-        {isError ? (
-          <Alert
-            message="Не удалось создать сотрудника"
-            // description="Detailed description and advice about successful copywriting."
-            type="error"
-            showIcon
-            closable
-          />
-        ) : (
-          <Alert
-            message="Cотрудник был успешно создан"
-            // description="Detailed description and advice about successful copywriting."
-            type="success"
-            showIcon
-            closable
-          />
-        )}
-      </Space> */}
       <Row align="middle" justify="center">
         <EmployeeForm
           title="Добавить сотрудника"

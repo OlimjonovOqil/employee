@@ -11,10 +11,3 @@ const baseQuery = fetchBaseQuery({
 })
 
 export const baseQueryWithRetry = retry(baseQuery, { maxRetries: 1 })
-
-// export const api = {
-//   reducePath: "splitApi",
-//   baseQuery: baseQueryWithRetry,
-//   refetchOnMountOrArgChange: true,
-//   endpoinds: () => ({}),
-// }

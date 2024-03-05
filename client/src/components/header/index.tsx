@@ -21,7 +21,7 @@ export const Header = () => {
 
   return (
     <Layout.Header className={styles.header}>
-      <Space>
+      <Space className={styles.headerTitle}>
         <TeamOutlined className={styles.teamIcon} />
         <Link to={Paths.home}>
           <Typography.Title level={1}>Сотрудники</Typography.Title>
@@ -43,16 +43,6 @@ export const Header = () => {
           </Link>
         </Space>
       )}
-      {/* <Space className={styles.right}>
-        <Link to={Paths.register}>
-          <CustomButton icon={<UserOutlined />}>
-            Зарегестрироваться
-          </CustomButton>
-        </Link>
-        <Link to={Paths.login}>
-          <CustomButton icon={<LoginOutlined />}>Войти</CustomButton>
-        </Link>
-      </Space> */}
     </Layout.Header>
   )
 }
